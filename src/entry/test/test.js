@@ -3,6 +3,8 @@ import { Entry } from 'hero-cli/decorator';
 import getDefaultUIViews from './view';
 import Utils from '../../utils/index';
 
+console.log('fmoney', Utils);
+
 var defaultUIViews = getDefaultUIViews();
 
 @Entry()
@@ -24,11 +26,11 @@ export class DecoratePage {
           Hero.out({datas:{name:'table',data:[{sectionTitle:'test case',rows:datas}]}});
         };
         var define = {};
-        Hero.merge(define,data);
+        Utils.merge(define,data);
         define.testCase = '';
         Hero.out({datas:{name:'define',text:JSON.stringify(define,null,4)}});
         define.parent = 'parent';
-        define.name = 'testing',
+        define.name = 'testing';
         Hero.out({datas:[{name:'parent',subViews:[define]}]});
 
     }
@@ -50,7 +52,7 @@ export class DecoratePage {
        if(data.channel){
          Hero.out({datas:{name:'test',text:JSON.stringify(data,null,4)}});
        }
-       if (data.get == 'location') {
+       if (data.get === 'location') {
         if (data.la && data.lo) {
           Hero.out({datas:{name:'testing',coordinate:{la:data.la,lo:data.lo}}});
         }

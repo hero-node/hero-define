@@ -29,8 +29,8 @@ export class DecoratePage {
         };
         datas.push({sectionTitle:'Hero定义与单元测试',rows:heros});
         var mafias = [];
-        for (var i = 0; i < mafiaDefines.length; i++) {
-          var define = mafiaDefines[i];
+        for (i = 0; i < mafiaDefines.length; i++) {
+          define = mafiaDefines[i];
           if (define.displayName) {
             mafias.push({title:define.displayName,payload:define});
           }
@@ -44,14 +44,14 @@ export class DecoratePage {
 
     }
 
-    @Message('__data.payload.testCase')
+    @Message('__data.payload && __data.payload.testCase')
     testCase(data) {
       localStorage.boot = JSON.stringify(data.payload);
-      Hero.out({command:'goto:'+host+'/hero_define/hero_unit_test.html'});
+      Hero.out({command:'goto:'+host+'/entry/test/test.html'});
     }
-    @Message('__data.payload.samples')
+    @Message('__data.payload && __data.payload.samples')
     samples(data) {
       localStorage.boot = JSON.stringify(data.payload);
-      Hero.out({command:'goto:'+host+'/hero_define/hero_unit_sample.html'});
+      Hero.out({command:'goto:'+host+'/entry/unit/sample.html'});
     }
 }

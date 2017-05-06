@@ -107,6 +107,6 @@ function ceil10(value, exp) {
     return decimalAdjust('ceil', value, exp);
 }
 
-export {
-  remove, merge, contain, getInitData, fmoney, dataFormat, round10, floor10, ceil10
+export default {
+    remove, merge, contain, getInitData, fmoney, dataFormat, round10, floor10, ceil10
 };
