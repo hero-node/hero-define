@@ -1,5 +1,5 @@
-// eslint-disable-next-line
 var heroDefines = [
+
     // 元素的基本形式、一切其它元素都“继承”自它
     // create by Hero
     //
@@ -1457,6 +1457,7 @@ var heroDefines = [
             }
         ]
     }
+
 ];
 
 export default heroDefines;

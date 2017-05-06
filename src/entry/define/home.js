@@ -15,8 +15,7 @@ var defaultUIViews = getDefaultUIViews();
 export class DecoratePage {
 
     @Boot
-    boot(data){
-
+    boot(){
         var datas = [];
         var heros = [];
         for (var i = 0; i < heroDefines.length; i++) {
@@ -30,8 +29,8 @@ export class DecoratePage {
         };
         datas.push({sectionTitle:'Hero定义与单元测试',rows:heros});
         var mafias = [];
-        for (i = 0; i < mafiaDefines.length; i++) {
-          define = mafiaDefines[i];
+        for (var i = 0; i < mafiaDefines.length; i++) {
+          var define = mafiaDefines[i];
           if (define.displayName) {
             mafias.push({title:define.displayName,payload:define});
           }
@@ -42,6 +41,7 @@ export class DecoratePage {
         };
         datas.push({sectionTitle:'Mafia定义',rows:mafias});
         Hero.out({datas:{name:'table',data:datas}});
+
     }
 
     @Message('__data.payload.testCase')

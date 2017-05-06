@@ -13,6 +13,7 @@ export class DecoratePage {
 
     @Boot
     boot(){
+
       var data = Utils.getInitData();
         if (data.testCase) {
           var datas = [];
@@ -23,17 +24,18 @@ export class DecoratePage {
           Hero.out({datas:{name:'table',data:[{sectionTitle:'test case',rows:datas}]}});
         };
         var define = {};
-        Utils.merge(define,data);
+        Hero.merge(define,data);
         define.testCase = '';
         Hero.out({datas:{name:'define',text:JSON.stringify(define,null,4)}});
         define.parent = 'parent';
-        define.name = 'testing';
+        define.name = 'testing',
         Hero.out({datas:[{name:'parent',subViews:[define]}]});
 
     }
 
     @Message('true')
     payload(data){
+
         if (data.payload) {
           data.payload.desc = undefined;
           Hero.out({datas:{name:'test',text:JSON.stringify(data.payload,null,4)}});
@@ -48,10 +50,11 @@ export class DecoratePage {
        if(data.channel){
          Hero.out({datas:{name:'test',text:JSON.stringify(data,null,4)}});
        }
-       if (data.get === 'location') {
+       if (data.get == 'location') {
         if (data.la && data.lo) {
           Hero.out({datas:{name:'testing',coordinate:{la:data.la,lo:data.lo}}});
         }
       }
+
     }
 }

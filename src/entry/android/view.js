@@ -1,6 +1,7 @@
 var host = window.location.origin;
 var getDefaultUIViews = function () {
     return {
+
         backgroundColor: '4dd0e1', // 整页背景色
         tintColor: '303e53', // 着色
         // 导航栏显示内容
@@ -74,6 +75,7 @@ var getDefaultUIViews = function () {
             }
 
         ]
+
     };
 };
 

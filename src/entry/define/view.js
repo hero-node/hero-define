@@ -5,14 +5,17 @@ var getDefaultUIViews = function () {
             title: 'Hero元素表',
             navigationBarHidden: false
         },
-        views:
-        [
+        views: [
             {
                 class: 'HeroTableView',
                 name: 'table',
-                frame: { x: '0', y: '0', r: '0', h: '1x' }
-            },
-            {
+                frame: {
+                    x: '0',
+                    y: '0',
+                    r: '0',
+                    h: '1x'
+                }
+            }, {
                 class: 'HeroToast',
                 name: 'toast'
             }

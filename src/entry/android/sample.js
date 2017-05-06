@@ -11,7 +11,7 @@ var defaultUIViews = getDefaultUIViews();
 export class DecoratePage {
 
     @Boot
-    boot(data){
+    boot(){
       Hero.out({globle:{key:'finishLoading'}});
     }
 }
