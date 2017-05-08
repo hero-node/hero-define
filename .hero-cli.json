@@ -2,5 +2,6 @@
   "environments": {
     "dev": "src/environments/environment-dev.js",
     "prod": "src/environments/environment-prod.js"
-  }
+  },
+  "homepage": "http://hero-mobile.github.io/hero-define"
 }
