@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "hero start -e dev -f",
-    "build": "hero build -m -e prod -f",
+    "build": "hero build -m -e prod -f -i",
     "build-demo": "hero build -e prod -m",
     "build-standalone": "hero build -e prod -s",
     "mock": "node mock/index.js",
