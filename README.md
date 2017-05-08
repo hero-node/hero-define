@@ -11,7 +11,7 @@ npm start
 
 ```
 
-Once start successfully, open URL: [http://localhost:3000?state=http://localhost:3000/entry/define/home.html](http://localhost:3000?state=http://localhost:3000/entry/define/home.html).
+Once start successfully, open URL: [http://localhost:3000/hero-define/index.html](http://localhost:3000/hero-define/index.html).
 
 ## How to deploy
 Run command:
