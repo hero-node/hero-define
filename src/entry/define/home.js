@@ -5,8 +5,6 @@ import getDefaultUIViews from './view';
 import heroDefines from '../../data/hero';
 import mafiaDefines from '../../data/mafia';
 
-var host = window.location.origin;
-
 var defaultUIViews = getDefaultUIViews();
 
 @Entry()
