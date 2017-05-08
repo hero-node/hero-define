@@ -2,11 +2,8 @@
   "name": "hero-template",
   "version": "0.0.1",
   "dependencies": {
-    "axios": "^0.16.1",
     "hero-cli": "github:hero-mobile/hero-cli",
-    "hero-js": "github:hero-mobile/hero-js",
-    "promise": "^7.1.1",
-    "qs": "^6.4.0"
+    "hero-js": "github:hero-mobile/hero-js"
   },
   "devDependencies": {
     "body-parser": "^1.13.3",
