@@ -13,13 +13,15 @@ npm start
 
 Once start successfully, open URL: [http://localhost:3000?state=http://localhost:3000/entry/define/home.html](http://localhost:3000?state=http://localhost:3000/entry/define/home.html).
 
-## How to build
+## How to deploy
 Run command:
 
 ```sh
-npm run build
+npm run deploy
 
 ```
+
+This will deploy to [https://hero-mobile.github.io/hero-define](https://hero-mobile.github.io/hero-define)
 
 ## How to start mock server
 For more detail, see file ./mock/README.md.

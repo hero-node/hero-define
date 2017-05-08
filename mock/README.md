@@ -10,18 +10,12 @@ npm start
 Once start successfully, you can see below messages:
 
 ```
-Proxy server is running at:
-http://localhost:3000 will proxy to http://www.my-website.com
-
 Mock server is running at:
-http://localhost:3001
+http://localhost:4000
 
 ```
 
-It will start proxy server and mock server at different port:
-
-* Start the mock serer and dynamic loads URL routers in folder `modules`.
-* Start the proxy server, the proxy target configured in attribute serverConfig of file `package.json`.
+It will start the mock server and dynamic loads URL routers in folder `modules`.
 
 ```javascript
 "serverConfig": {
@@ -29,11 +23,6 @@ It will start proxy server and mock server at different port:
   "mockAPIPrefix": "",
   // the initial port used by proxy/mock server
   "proxyBasePort": 3000,
-  // start an instance of proxy server for every url in #proxyTargetURLs
-  // the port number increment by step 1
-  "proxyTargetURLs": [
-    "http://www.my-website.com"
-  ]
 }
 
 ```

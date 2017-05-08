@@ -9,15 +9,11 @@
     "cookie-parser": "^1.4.0",
     "express": "^4.13.3",
     "http-proxy": "^1.16.2",
-    "log4js": "^0.6.35",
     "mockjs": "^1.0.1-beta3"
   },
   "serverConfig": {
     "mockAPIPrefix": "",
-    "proxyBasePort": 3000,
-    "proxyTargetURLs": [
-      "https://www.my-website.com"
-    ]
+    "proxyBasePort": 4000
   },
   "devDependencies": {},
   "scripts": {

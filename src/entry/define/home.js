@@ -1,5 +1,6 @@
 import { Component, Boot, Message, Hero } from 'hero-js';
 import { Entry } from 'hero-cli/decorator';
+import {PATH as path} from '../../constant/index';
 import getDefaultUIViews from './view';
 import heroDefines from '../../data/hero';
 import mafiaDefines from '../../data/mafia';
@@ -49,13 +50,13 @@ export class DecoratePage {
     })
     testCase(data) {
       localStorage.boot = JSON.stringify(data.payload);
-      Hero.out({command:'goto:'+host+'/entry/test/test.html'});
+      Hero.out({command:'goto:'+path+'/entry/test/test.html'});
     }
     @Message(function(data){
       return data.payload && data.payload.samples;
     })
     samples(data) {
       localStorage.boot = JSON.stringify(data.payload);
-      Hero.out({command:'goto:'+host+'/entry/unit/sample.html'});
+      Hero.out({command:'goto:'+path+'/entry/unit/sample.html'});
     }
 }
