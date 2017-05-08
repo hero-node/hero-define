@@ -24,7 +24,7 @@ npm run deploy
 This will deploy to [https://hero-mobile.github.io/hero-define](https://hero-mobile.github.io/hero-define)
 
 ## How to start mock server
-For more detail, see file ./mock/README.md.
+For more detail, see file `mock/README.md`.
 
 Run command:
 
