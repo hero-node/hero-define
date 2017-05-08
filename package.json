@@ -1,5 +1,5 @@
 {
-  "name": "hero-template",
+  "name": "hero-define",
   "version": "0.0.1",
   "dependencies": {
     "hero-cli": "github:hero-mobile/hero-cli",
