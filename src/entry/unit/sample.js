@@ -19,9 +19,8 @@ export class DecoratePage {
       };
     }
 
-    @Message('true')
+    @Message()
     payload(data){
-
         if (data.payload) {
           data.payload.desc = undefined;
           Hero.out({datas:{name:'test',text:JSON.stringify(data.payload,null,4)}});

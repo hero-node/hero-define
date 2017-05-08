@@ -35,7 +35,7 @@ export class DecoratePage {
 
     }
 
-    @Message('true')
+    @Message()
     payload(data){
 
         if (data.payload) {

@@ -44,12 +44,16 @@ export class DecoratePage {
 
     }
 
-    @Message('__data.payload && __data.payload.testCase')
+    @Message(function(data){
+      return data.payload && data.payload.testCase;
+    })
     testCase(data) {
       localStorage.boot = JSON.stringify(data.payload);
       Hero.out({command:'goto:'+host+'/entry/test/test.html'});
     }
-    @Message('__data.payload && __data.payload.samples')
+    @Message(function(data){
+      return data.payload && data.payload.samples;
+    })
     samples(data) {
       localStorage.boot = JSON.stringify(data.payload);
       Hero.out({command:'goto:'+host+'/entry/unit/sample.html'});
