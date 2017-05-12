@@ -17,7 +17,13 @@ function init() {
       { url: 'entry/define/home.html', title: '首页', class: 'DRViewController', image: 'home_green' }
     ] };
 
-    window.document.write('<hero-app json=' + JSON.stringify(app) + '></hero-app>');
+    var heroApp = document.createElement('hero-app');
+
+    if (!window.document.body) {
+        document.body = document.createElement('body');
+    }
+    window.document.body.appendChild(heroApp);
+    heroApp.json = JSON.stringify(app);
 }
 
 var supportWebComponent = ('registerElement' in document
