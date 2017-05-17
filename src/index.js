@@ -1,3 +1,5 @@
+import {PATH as path} from './constant/index';
+
 function init() {
   // Hero Core Web Components
     require('hero-js/src/hero-app.html');
@@ -14,7 +16,7 @@ function init() {
     // }
 
     var app = { tabs: [
-      { url: 'entry/define/home.html', title: '首页', class: 'DRViewController', image: 'home_green' }
+      { url: path + '/entry/define/home.html', title: '首页', class: 'DRViewController', image: 'home_green' }
     ] };
 
     var heroApp = document.createElement('hero-app');
